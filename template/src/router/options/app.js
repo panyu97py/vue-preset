@@ -8,7 +8,7 @@ export default {
         {
             name: 'showPageDemo',
             path: 'showPageDemo',
-            meta: {title: 'showPageDemo'},
+            meta: {title: 'showPageDemo', icon: 'icongaojingguanli'},
             component: () => import('@/views/app/showPageDemo'),
         },
         {

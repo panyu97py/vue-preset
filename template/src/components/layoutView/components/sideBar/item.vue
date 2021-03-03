@@ -1,7 +1,11 @@
 <script>
+import iconFont from '@/components/icon'
 export default {
   name: 'sideBarItem',
   functional: true,
+  components:{
+      iconFont
+  },
   props: {
     option: Object,
     index: Number
@@ -18,9 +22,10 @@ export default {
       class: 'iconClass'
     },
     [
-      createElement('svg-icon', {
+      createElement(iconFont, {
         props: {
-          iconClass: icon
+          iconName: icon,
+          size: 20
         }
       })
     ]
