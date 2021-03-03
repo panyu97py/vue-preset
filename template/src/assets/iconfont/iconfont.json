@@ -1,0 +1,142 @@
+{
+  "id": "2059598",
+  "name": "开发者平台",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "18693081",
+      "name": "团队",
+      "font_class": "tuandui1",
+      "unicode": "e613",
+      "unicode_decimal": 58899
+    },
+    {
+      "icon_id": "17116265",
+      "name": "展开",
+      "font_class": "richangshiyongtubiao-28",
+      "unicode": "e610",
+      "unicode_decimal": 58896
+    },
+    {
+      "icon_id": "17116266",
+      "name": "收缩",
+      "font_class": "richangshiyongtubiao-29",
+      "unicode": "e611",
+      "unicode_decimal": 58897
+    },
+    {
+      "icon_id": "17102888",
+      "name": "公告管理",
+      "font_class": "richangshiyongtubiao-26",
+      "unicode": "e60e",
+      "unicode_decimal": 58894
+    },
+    {
+      "icon_id": "17102889",
+      "name": "行业管理",
+      "font_class": "richangshiyongtubiao-27",
+      "unicode": "e60f",
+      "unicode_decimal": 58895
+    },
+    {
+      "icon_id": "17102490",
+      "name": "权限管理",
+      "font_class": "richangshiyongtubiao-23",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "17102491",
+      "name": "认证管理",
+      "font_class": "richangshiyongtubiao-24",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "17102492",
+      "name": "模版管理",
+      "font_class": "richangshiyongtubiao-25",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    },
+    {
+      "icon_id": "17101568",
+      "name": "公告管理",
+      "font_class": "gonggaoguanli",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "17101569",
+      "name": "告警管理",
+      "font_class": "gaojingguanli",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "17101573",
+      "name": "设备开发",
+      "font_class": "shebeikaifa",
+      "unicode": "e605",
+      "unicode_decimal": 58885
+    },
+    {
+      "icon_id": "17101574",
+      "name": "设备类型管理",
+      "font_class": "shebeileixingguanli",
+      "unicode": "e606",
+      "unicode_decimal": 58886
+    },
+    {
+      "icon_id": "17101575",
+      "name": "设备统计",
+      "font_class": "shebeitongji",
+      "unicode": "e607",
+      "unicode_decimal": 58887
+    },
+    {
+      "icon_id": "17101576",
+      "name": "首页概览",
+      "font_class": "shouyegailan",
+      "unicode": "e608",
+      "unicode_decimal": 58888
+    },
+    {
+      "icon_id": "17101577",
+      "name": "数据类型管理",
+      "font_class": "shujuleixingguanli",
+      "unicode": "e609",
+      "unicode_decimal": 58889
+    },
+    {
+      "icon_id": "17101578",
+      "name": "网关协议",
+      "font_class": "wangguanxieyi",
+      "unicode": "e60a",
+      "unicode_decimal": 58890
+    },
+    {
+      "icon_id": "17101579",
+      "name": "属性编码管理",
+      "font_class": "shuxingbianmaguanli",
+      "unicode": "e60b",
+      "unicode_decimal": 58891
+    },
+    {
+      "icon_id": "17101580",
+      "name": "协议管理",
+      "font_class": "xieyiguanli",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
+    },
+    {
+      "icon_id": "17101581",
+      "name": "行业管理",
+      "font_class": "hangyeguanli",
+      "unicode": "e60d",
+      "unicode_decimal": 58893
+    }
+  ]
+}
