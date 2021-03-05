@@ -1,5 +1,10 @@
 <template>
-    <layoutView :sideBarOptions="sideBarOptions">
+    <layoutView :navOptions="navOptions" :isCollapse="isCollapse" :menuBackgroundColor="menuBackgroundColor"
+                :menuTextColor="menuTextColor" :menuActiveTextColor="menuActiveTextColor"
+                :navBarBackgroundColor="navBarBackgroundColor">
+        <div slot="navBar">
+            <button @click="isCollapse=!isCollapse">展开/收起</button>
+        </div>
         <router-view/>
     </layoutView>
 </template>
@@ -10,6 +15,15 @@
     export default {
         components: {
             layoutView
+        },
+        data() {
+            return {
+                isCollapse: true,
+                navBarBackgroundColor: '#11233f',
+                menuBackgroundColor: '#11233f',
+                menuTextColor: '#ffffff',
+                menuActiveTextColor: '#ffffff',
+            }
         },
         computed: {
             routeMap() {
@@ -29,7 +43,7 @@
                 getRoute(this.$router.options.routes)
                 return tempObj
             },
-            sideBarOptions() {
+            navOptions() {
                 const appRoute = this.routeMap[APP_ROUTE_NAME] || {}
                 return appRoute.children || []
             }

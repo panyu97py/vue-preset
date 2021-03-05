@@ -1,13 +1,12 @@
 <template>
-    <div class="sideBar" :class="{sideBar_isCollapse:isCollapse,sideBar_notCollapse:!isCollapse}">
+    <div class="sideBar" :class="{sideBar_isCollapse:isCollapse,sideBar_notCollapse:!isCollapse}" :style="`backgroundColor:${menuBackgroundColor}`">
         <el-menu :collapse="isCollapse"
                  unique-opened
                  router
-                 background-color="#11233f"
-                 text-color="rgba(255,255,255,0.6)"
-                 active-text-color="#fff"
-                 active-background-color="#1890FF">
-            <sideBarItem v-for="item in options.filter(option=>(!option.hidden))" :key="item.name" :option="item"/>
+                 :background-color="menuBackgroundColor"
+                 :text-color="menuTextColor"
+                 :active-text-color="menuActiveTextColor">
+            <sideBarItem v-for="item in navOptions" :key="item.name" :isCollapse="isCollapse" :option="item"/>
         </el-menu>
     </div>
 </template>
@@ -18,18 +17,16 @@
     export default {
         props: {
             isCollapse: Boolean,
-            options: {
+            menuBackgroundColor: String,
+            menuTextColor: String,
+            menuActiveTextColor: String,
+            navOptions: {
                 type: Array,
                 default: () => []
             }
         },
         components: {
             sideBarItem
-        },
-        methods: {
-            handlerChangeCollapse() {
-                this.$emit('changeCollapse', !this.isCollapse)
-            }
         }
     }
 </script>
@@ -40,7 +37,6 @@
     }
 
     .sideBar {
-        background: #11233f;
         height: 100%;
         transition: width 0.5s;
         position: relative;

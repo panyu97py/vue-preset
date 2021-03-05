@@ -1,46 +1,33 @@
 <template>
     <layout>
-        <navBar slot="navBar" :isCollapse="isCollapse"
-                @collapseChange="handlerChangeCollapse">
-            <template slot="navBar_left">
-                <slot name="navBar_left"/>
-            </template>
-            <template slot="navBar_left">
-                <slot name="navBar_left"/>
-            </template>
-        </navBar>
-        <sideBar slot="sideBar" :options="sideBarOptions" :isCollapse="isCollapse"/>
-        <template  slot="mainView">
+        <div slot="navBar" :style="`background:${navBarBackgroundColor};height:100%;`">
+            <slot name="navBar"/>
+        </div>
+        <sideBar slot="sideBar" v-bind="$props"/>
+        <template slot="mainView">
             <slot/>
         </template>
     </layout>
 </template>
 <script>
     import layout from './components/layout'
-    import navBar from './components/navBar'
     import sideBar from './components/sideBar'
 
     export default {
         props: {
-            sideBarOptions: {
-                type: Object,
+            isCollapse: Boolean,
+            navBarBackgroundColor: String,
+            menuBackgroundColor: String,
+            menuTextColor: String,
+            menuActiveTextColor: String,
+            navOptions: {
+                type: Array,
                 default: () => ({})
             }
         },
         components: {
             layout,
-            navBar,
             sideBar
-        },
-        data() {
-            return {
-                isCollapse: false
-            }
-        },
-        methods: {
-            handlerChangeCollapse(isCollapse) {
-                this.isCollapse = isCollapse
-            }
         }
     }
 </script>

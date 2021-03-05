@@ -8,47 +8,36 @@
         <slot name="right"/>
       </div>
     </div>
-    <div class="viewBody_body"
-         :class="($slots.left||$slots.right)&&`viewBody_bodyHasHead`">
+    <div class="viewBody_body">
       <slot/>
     </div>
   </div>
 </template>
 <style lang="scss" scoped>
-  $breadcrumbHeight: 54px;
-  $mainViewBodyPadding: 24px;
   .viewBody {
     width: 100%;
     height: 100%;
-    /*box-sizing: border-box;*/
-    /*overflow: scroll;*/
     position: relative;
     display: flex;
     flex-direction: column;
 
     &_head {
-      /*position: absolute;*/
-      /*z-index: 10;*/
       width: 100%;
       background: white;
-      height: $breadcrumbHeight;
-      line-height: $breadcrumbHeight;
+      height: $layout_mainView_breadcrumb_height;
+      line-height: $layout_mainView_breadcrumb_height;
       box-shadow: 0px 1px 2px 0px rgba(207, 209, 213, 0.2);
       display: flex;
       justify-content: space-between;
-      padding: 0 $mainViewBodyPadding;
+      padding: 0 $layout_mainView_padding;
     }
 
     &_body {
       flex: 1;
       height: 0;
       box-sizing: border-box;
-      padding: $mainViewBodyPadding;
+      padding: $layout_mainView_padding;
       overflow: auto;
-    }
-
-    &_bodyHasHead {
-      margin-top: $breadcrumbHeight;
     }
   }
 </style>

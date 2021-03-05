@@ -15,11 +15,7 @@
 </template>
 
 <script>
-export default {
-  props: {
-    isCollapse: Boolean
-  }
-}
+export default {}
 </script>
 
 <style lang="scss" scoped>
@@ -48,11 +44,9 @@ export default {
 
     &_mainView {
       height: 100%;
-      /*width: 100%;*/
       flex: 1;
       flex-shrink: 0;
       width: 0;
-      background: #f0f1f4;
     }
   }
 </style>
